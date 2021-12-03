@@ -5,11 +5,9 @@ for (let i = 0; i < document.querySelectorAll(".drum").length; i++) {
 // variable set to the tom1 sound
 var tom1 = new Audio("/sounds/tom-1.mp3");
 
-function handleClick() {
-  //button inner html
-  let buttonInnerHtml = this.innerHTML;
-
-  switch (buttonInnerHtml) {
+// a function that takes in the inner html and plays the sound according to the letter
+let innerHTML = function (innerHTML) {
+  switch (innerHTML) {
     case "w":
       let tom1 = new Audio("sounds/tom-1.mp3");
       tom1.play();
@@ -48,8 +46,32 @@ function handleClick() {
     default:
       console.log(buttonInnerHtml);
   }
+};
+
+// detecting click
+function handleClick() {
+  //button inner html
+  let buttonInnerHtml = this.innerHTML;
+
+  innerHTML(buttonInnerHtml);
+  buttonAnimation(buttonInnerHtml);
 }
 
-document.addEventListener("keydown", function () {
-  alert("Key was pressed");
+//Detecting button press
+//plays sound depending on the key pressed down.
+/*i grab the even key, which is a string and compare it
+to the inner html using the function innerHTML */
+
+document.addEventListener("keydown", function (event) {
+  console.log(event.key);
+  let key = event.key;
+
+  innerHTML(key);
+  buttonAnimation(key);
 });
+
+function buttonAnimation(currentkey) {
+  let activeButton = document.querySelector(`.${currentkey}`);
+
+  activeButton.classList.add("pressed");
+}

@@ -1,4 +1,4 @@
-# Frontend Mentor - Order summary card solution
+# Drum Kit
 
 This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -91,6 +91,18 @@ function handleClicked() {
     alert("Key was pressed")
   });
   //When any key is pressed anywhere on the document we get an alert that says the "Key was pressed"
+}
+```
+
+- Adding an animation class to a specific key.
+
+```js
+  function buttonAnimation(currentkey) {
+  let activeButton = document.querySelector(`.${currentkey}`);
+
+  activeButton.classList.add("pressed");
+  //when adding a class you do not need to write .pressed, instead just write pressed.
+}
 }
 ```
 
