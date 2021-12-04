@@ -74,4 +74,9 @@ function buttonAnimation(currentkey) {
   let activeButton = document.querySelector(`.${currentkey}`);
 
   activeButton.classList.add("pressed");
+
+  //setting a clock that run and when it ends it run this function.
+  setTimeout(function () {
+    activeButton.classList.remove("pressed");
+  }, 100);
 }

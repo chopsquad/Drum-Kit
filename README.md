@@ -1,6 +1,6 @@
 # Drum Kit
 
-This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+In this project i followed the guidelines and thru a series of challenges created a drum kit webpage.
 
 ## Table of contents
 
@@ -105,10 +105,6 @@ function handleClicked() {
 }
 }
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
