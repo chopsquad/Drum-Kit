@@ -106,6 +106,18 @@ function handleClicked() {
 }
 ```
 
+-Adding a set timer function to run a remove "class"
+
+```js
+
+  //setting a clock that run and when it ends it run this function.
+  setTimeout(function () { //anonymous function
+    activeButton.classList.remove("pressed");
+  }, 100 //this is in milliseconds);
+
+}
+```
+
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
